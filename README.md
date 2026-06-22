@@ -65,7 +65,7 @@ The bot runs 24/5 on an AWS EC2 instance, evaluating EUR/USD every hour and plac
 
 - **No hardcoded credentials** — OANDA API key is stored in AWS Secrets Manager, EC2 reads it via IAM role at runtime
 - **Look-ahead bias prevention** — all candle data filtered to current_time before any indicator is computed, safe for backtesting
-- Structured AI debate framework — Claude and GPT-4 alternated as proposer and critic to stress-test strategy logic before any code was written, the same way a quant uses backtesting to validate before going live. All directional decisions, instrument selection, risk rules, and approval gates were made by the developer.
+- **Structured AI debate framework** — Claude and GPT-4 alternated as proposer and critic to stress-test strategy logic before any code was written, the same way a quant uses backtesting to validate before going live. All directional decisions, instrument selection, risk rules, and approval gates were made by the developer.
 - **Daily bar ATR** — ATR computed on FX-day daily OHLC bars (5pm NY to 5pm NY), not hourly candles, matching the strategy spec
 - **fcntl file locking** — trade log is race-safe for concurrent writes on Linux
 - **Paper trading first** — bot runs on OANDA practice account for minimum 8 weeks before any real money is deployed
