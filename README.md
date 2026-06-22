@@ -79,11 +79,11 @@ The bot runs 24/5 on an AWS EC2 instance, evaluating EUR/USD every hour and plac
 - [x] ADX regime filter
 - [x] News blackout filter
 - [x] Entry signal evaluator
-- [ ] OANDA executor (places actual orders)
-- [ ] Main bot loop
-- [ ] EC2 deployment and systemd service
-- [ ] CloudWatch logging integration
-- [ ] Paper trading phase
+- [x] OANDA executor (places actual orders)
+- [x] Main bot loop
+- [x] EC2 deployment and systemd service
+- [x] CloudWatch logging integration
+- [x] Paper trading phase
 
 ---
 
